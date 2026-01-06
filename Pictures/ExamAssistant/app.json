@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "ExamAssistant",
+    "slug": "ExamAssistant",
+    "scheme": "examassistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Allow ExamAssistant to use speech recognition for voice input.",
+        "NSMicrophoneUsageDescription": "Allow ExamAssistant to use your microphone for voice answers."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.melvin_mwango.ExamAssistant"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow ExamAssistant to use your microphone for voice answers.",
+          "speechRecognitionPermission": "Allow ExamAssistant to use speech recognition for voice input."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bac5ccfe-d5b1-4233-865c-54b0c6aec038"
+      }
+    }
+  }
+}
