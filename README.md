@@ -1,47 +1,79 @@
-ExamAssistant – Voice-Driven Exam System for Visually Impaired Users
+# ExamAssistant – Voice-Driven Exam System for Visually Impaired Users
 
 A React Native (Expo) mobile application enabling visually impaired students to take exams independently using voice commands, offline support, and accessibility-first design.
 
-📱 Live APK (Android):
+📱 **Live APK (Android):**  
 👉 https://expo.dev/artifacts/eas/fHx7RRmHDj7PfsFH9QppaF.apk
 
+## Why This Project Matters
 
-Why This Project Matters
+Traditional exam systems rely on visual interfaces, forcing visually impaired students to depend on human scribes or external tools.  
+**ExamAssistant enables fully independent, voice-only exam taking.**
 
-Traditional exam systems rely on visual interfaces, forcing visually impaired students to depend on human scribes or external tools.
-ExamAssistant enables fully independent, voice-only exam taking.
+## Core Capabilities (Skimmable)
 
-Core Capabilities 
+- 🎙 **Voice-driven navigation** (TTS + STT)
+- 🔒 **Strict TTS/STT state locking** (no feedback loops)
+- 📡 **Offline-first exam taking** with auto-sync
+- 👥 **Role-based access** (Student / Examiner)
+- 📊 **Research analytics & usability metrics**
+- ♿ **Accessibility-first UX** (voice, haptics, no visual dependency)
 
-🎙 Voice-driven navigation (TTS + STT)
+## Technical Highlights (THIS IS GOLD)
 
-🔒 Strict TTS/STT state locking (no feedback loops)
+- **React Native + Expo** (Android/iOS/Web)
+- **Firebase Auth + Firestore**
+- **Offline caching** with AsyncStorage
+- **Explicit TTS/STT state machine**
+- **Context-based command validation**
+- **AI-assisted development** with full ownership
 
-📡 Offline-first exam taking with auto-sync
+## Architecture Snapshot
 
-👥 Role-based access (Student / Examiner)
+The system enforces a **turn-based voice interaction model** where Text-to-Speech and Speech-to-Text are mutually exclusive, preventing feedback loops and ensuring reliable voice control.
 
-📊 Research analytics & usability metrics
+### State Management Flow
 
-♿ Accessibility-first UX (voice, haptics, no visual dependency)
+```
+IDLE → TTS Speaking (STT locked) → Process → STT Listening (TTS locked) → Process → IDLE
+```
 
+**Key Implementation**: Explicit state flags (`isSpeaking`, `isListening`) with enforced delays between transitions (500ms after STT stop, 800ms after TTS stop) ensure the microphone never captures TTS output.
 
-Technical Highlights 
+## Quick Start
 
-React Native + Expo (Android)
+```bash
+# Install dependencies
+npm install
 
-Firebase Auth + Firestore
+# Start Expo development server
+npm start
 
-Offline caching with AsyncStorage
+# Run on Android
+npm run android
+```
 
-Explicit TTS/STT state machine
+## 📚 Documentation
 
-Context-based command validation
+For comprehensive documentation, installation guides, technical details, and project structure, see:
 
-AI-assisted development with full ownership
+👉 **[README-DETAILED.md](./README-DETAILED.md)** - Full project documentation
 
-Architecture Snapshot
+Additional documentation:
+- [FIREBASE_SETUP.md](./FIREBASE_SETUP.md) - Firebase configuration guide
+- [NAVIGATION.md](./NAVIGATION.md) - Navigation structure documentation
+- [FIRESTORE_INDEXES.md](./FIRESTORE_INDEXES.md) - Database indexing requirements
 
-The system enforces a turn-based voice interaction model where Text-to-Speech and Speech-to-Text are mutually exclusive, preventing feedback loops and ensuring reliable voice control.
+## 🤝 Contributing
 
-Note: For more info read the #READ-DETAILED.md
+This is a research project for accessibility evaluation. For contributions or questions, please contact the project maintainer.
+
+## 📞 Contact
+
+**Developer**: Powell Mweemba  
+**Project**: ExamAssistant - Voice-Driven Exam System  
+**Purpose**: Accessibility research for visually impaired students
+
+---
+
+**Built with ❤️ for accessibility and education**
