@@ -717,7 +717,7 @@ The app uses environment variables to securely store Firebase credentials. This 
 
 ## 📄 License
 
-This project is private and proprietary.
+This is a public research project for accessibility evaluation. The codebase is open for educational and research purposes.
 
 ## 🤝 Contributing
 
