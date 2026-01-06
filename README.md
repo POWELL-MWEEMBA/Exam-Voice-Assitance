@@ -654,7 +654,7 @@ The app uses environment variables to securely store Firebase credentials. This 
 
 ## 🚧 Future Enhancements
 
-### Short-Term (Next 2-3 months)
+### Short-Term 
 
 - [ ] **Multilingual Support**: Add TTS/STT support for multiple languages (Swahili, French, etc.)
 - [ ] **Noise Handling**: Implement noise cancellation and voice enhancement algorithms
@@ -662,7 +662,7 @@ The app uses environment variables to securely store Firebase credentials. This 
 - [ ] **Enhanced Offline Mode**: Pre-cache all exam data and improve sync reliability
 - [ ] **Unit and Integration Tests**: Comprehensive test coverage for critical accessibility features
 
-### Medium-Term (3-6 months)
+### Medium-Term 
 
 - [ ] **Exam Integrity Protections**:
   - Screen lock during exams
@@ -676,7 +676,7 @@ The app uses environment variables to securely store Firebase credentials. This 
 - [ ] **Push Notifications**: Alert students about new exams and examiners about submissions
 - [ ] **Export Functionality**: Export analytics data and exam results in multiple formats
 
-### Long-Term (6-12 months)
+### Long-Term 
 
 - [ ] **AI-Powered Voice Recognition**: Integration with advanced STT models for better accuracy
 - [ ] **Adaptive Question Reading**: Adjust reading speed and style based on user preferences
@@ -725,31 +725,11 @@ This is a research project for accessibility evaluation. For contributions or qu
 
 ## 📞 Contact
 
-**Developer**: Melvin Mwango  
+**Developer**: Powell Mweemba 
 **Project**: ExamAssistant - Smart AI Exam System  
 **Purpose**: Accessibility research for visually impaired students
 
 ---
-
-## 🎓 What Recruiters Should Know
-
-### Technical Skills Demonstrated
-
-- ✅ **React Native & Expo**: Cross-platform mobile development
-- ✅ **Firebase**: Backend-as-a-Service integration (Auth, Firestore, Storage)
-- ✅ **State Management**: Context API for global state
-- ✅ **Navigation**: React Navigation with complex routing
-- ✅ **Accessibility**: WCAG compliance and inclusive design
-- ✅ **Offline Architecture**: Local-first design with sync
-- ✅ **Real-Time Data**: Firestore real-time listeners
-- ✅ **Research Analytics**: Data collection and analysis systems
-
-### Problem-Solving Skills
-
-- Implemented offline-first architecture without native network modules
-- Created comprehensive accessibility system for visually impaired users
-- Built research analytics system for evaluation metrics
-- Designed role-based authentication and authorization
 
 ### Project Impact
 
