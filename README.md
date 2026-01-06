@@ -10,7 +10,7 @@ A React Native (Expo) mobile application enabling visually impaired students to 
 Traditional exam systems rely on visual interfaces, forcing visually impaired students to depend on human scribes or external tools.  
 **ExamAssistant enables fully independent, voice-only exam taking.**
 
-## Core Capabilities (Skimmable)
+## Core Capabilities 
 
 - 🎙 **Voice-driven navigation** (TTS + STT)
 - 🔒 **Strict TTS/STT state locking** (no feedback loops)
@@ -19,9 +19,9 @@ Traditional exam systems rely on visual interfaces, forcing visually impaired st
 - 📊 **Research analytics & usability metrics**
 - ♿ **Accessibility-first UX** (voice, haptics, no visual dependency)
 
-## Technical Highlights (THIS IS GOLD)
+## Technical Highlights 
 
-- **React Native + Expo** (Android/iOS/Web)
+- **React Native + Expo** (Android)
 - **Firebase Auth + Firestore**
 - **Offline caching** with AsyncStorage
 - **Explicit TTS/STT state machine**
